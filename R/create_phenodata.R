@@ -13,7 +13,7 @@
 create_phenodata <- function(experiment.set){
     set <- experiment.set
     phenodata.set   <- matrix ( rep ( set, 2) , ncol = 2 )
-    phenodata.set   <- as.data.frame ( phenodata.set )
+    phenodata.set   <- as.data.frame ( phenodata.set, stringsAsFactors=FALSE)
     colnames ( phenodata.set )   <- c ( "Name" , "FileName" )
     phenodata.set$experiment.set <- experiment.set
     return(phenodata.set)
