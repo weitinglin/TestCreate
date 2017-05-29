@@ -18,7 +18,7 @@ This function will first generate the files name according to the input year, th
 select the month and years column to output
 }
 \examples{
-\dontun{
+\dontrun{
 fars_read_years(years=2013)
 }
 }
