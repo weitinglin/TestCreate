@@ -4,12 +4,10 @@
 \alias{create_phenodata}
 \title{Create the Phenodata for affy input}
 \usage{
-create_phenodata(experiment.set, data.path)
+create_phenodata(experiment.set)
 }
 \arguments{
 \item{experiment.set}{vector, store the experiment set in vector}
-
-\item{data.path}{str, the input raw cell directory path}
 }
 \value{
 this function will return a tbl_df data , if the filename not exist in current directory, show error message
@@ -18,6 +16,6 @@ this function will return a tbl_df data , if the filename not exist in current d
 This function will create the phenodata which used in loading cel files
 }
 \examples{
-create_phenodata(experiment.set=c("control_1","control_2","case_1","case_2"), data.path='./cel_data_dir')
+create_phenodata(experiment.set=c("control_1","control_2","case_1","case_2"))
 }
 

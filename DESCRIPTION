@@ -3,7 +3,8 @@ Title: A R Package for lab data manipulation
 Version: 0.0.0.9000
 Authors@R: person("Weiting", "lin", email = "weitinglin66@gmail.com", role = c("aut", "cre"))
 Description: Provide the convenient way to wrangle the regulat lab data analysis
-Depends: R (>= 3.3.0)
+Depends:
+    R (>= 3.3.0)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
@@ -11,6 +12,8 @@ Imports:
     dplyr,
     readr,
     stringr
-Suggests: knitr,
+Suggests:
+    knitr,
     rmarkdown
 VignetteBuilder: knitr
+RoxygenNote: 5.0.1
