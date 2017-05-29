@@ -9,7 +9,7 @@
 #'
 #' @param filename str, the input file's name
 #' @return this function will return a tbl_df data , if the filename not exist in current directory, show error message
-#' @examples fars_read(filename="accident_2003.csv")
+#' @examples fars_read(filename="./data/accident_2003.csv.bz2")
 #' @importFrom  readr read_csv
 #' @importFrom  dplyr tbl_df
 fars_read <- function(filename) {
