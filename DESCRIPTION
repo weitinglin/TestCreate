@@ -1,5 +1,5 @@
 Package: TestCreate
-Title: A R Package for lab data manipulation
+Title: A R Package for visualization of the US National Highway Traffic Safety Administrations dataset
 Version: 0.0.0.9000
 Authors@R: person("Weiting", "lin", email = "weitinglin66@gmail.com", role = c("aut", "cre"))
 Description: Provide the convenient way to wrangle the regulat lab data analysis
@@ -11,7 +11,9 @@ LazyData: true
 Imports:
     dplyr,
     readr,
-    stringr
+    stringr,
+    maps,
+    graphics
 Suggests:
     knitr,
     rmarkdown,
