@@ -12,9 +12,13 @@ fars_map_state(state.num, year)
  @param year a integer, indicated the year's  of the traffic accidents
  @return a graphical object, this function will return a plot with the accident happening at certain state with certain year,
  if the STATE number is not exist, show error message, if the choosen state have no accident happended, show errors
- @examples  fars_map_state(state.num = 1, year = 2014)
+ @examples
+ \dontrun{
+ fars_map_state(state.num = 1, year = 2014)
+ }
  @importFrom  dplyr filter
  @importFrom maps map
  @importFrom graphics points
+ @export
 }
 

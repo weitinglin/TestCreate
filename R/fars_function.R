@@ -15,6 +15,7 @@
 #' }
 #' @importFrom  readr read_csv
 #' @importFrom  dplyr tbl_df
+#' @export
 fars_read <- function(filename) {
     if(!file.exists(filename))
         stop("file '", filename, "' does not exist")
@@ -98,8 +99,6 @@ fars_summarize_years <- function(years) {
 }
 
 
-
-
 #' Visualization fo the accident happening in certain state during a specific year
 #'
 #'  @description  This function will visualize the traffic accidents happend during certain year  within certain state into the geographic view
@@ -114,6 +113,7 @@ fars_summarize_years <- function(years) {
 #'  @importFrom  dplyr filter
 #'  @importFrom maps map
 #'  @importFrom graphics points
+#'  @export
 fars_map_state <- function(state.num, year) {
     filename <- make_filename(year)
     data <- fars_read(filename)

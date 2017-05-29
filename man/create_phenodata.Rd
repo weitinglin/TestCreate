@@ -16,6 +16,8 @@ this function will return a tbl_df data , if the filename not exist in current d
 This function will create the phenodata which used in loading cel files
 }
 \examples{
+\dontrun{
 create_phenodata(experiment.set=c("control_1","control_2","case_1","case_2"))
+}
 }
 

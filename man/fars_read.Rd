@@ -17,6 +17,8 @@ This function will use the readr::read_csv to load the .csv file into R
 and turn the data into tbl_df data structure
 }
 \examples{
-fars_read(filename="accident_2003.csv")
+\dontrun{
+fars_read(filename="./data/accident_2003.csv.bz2")
+}
 }
 
