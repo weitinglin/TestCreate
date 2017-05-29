@@ -21,4 +21,3 @@ and turn the data into tbl_df data structure
 fars_read(filename="./data/accident_2003.csv.bz2")
 }
 }
-

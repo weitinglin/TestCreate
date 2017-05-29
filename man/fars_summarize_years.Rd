@@ -20,4 +20,3 @@ This function will first load the data accoding tot years input
 fars_summarize_years(years = c(2013,2014))
 }
 }
-

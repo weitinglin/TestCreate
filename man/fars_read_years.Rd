@@ -22,4 +22,3 @@ select the month and years column to output
 fars_read_years(years=2013)
 }
 }
-

@@ -21,4 +21,3 @@ fars_map_state(state.num, year)
  @importFrom graphics points
  @export
 }
-
