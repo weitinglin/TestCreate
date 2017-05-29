@@ -6,18 +6,20 @@
 \usage{
 fars_map_state(state.num, year)
 }
+\arguments{
+\item{state.num}{a integer, the  code number of state}
+
+\item{year}{a integer, indicated the year's  of the traffic accidents}
+}
+\value{
+a graphical object, this function will return a plot with the accident happening at certain state with certain year,
+if the STATE number is not exist, show error message, if the choosen state have no accident happended, show errors
+}
 \description{
-@description  This function will visualize the traffic accidents happend during certain year  within certain state into the geographic view
- @param state.num a integer, the  code number of state
- @param year a integer, indicated the year's  of the traffic accidents
- @return a graphical object, this function will return a plot with the accident happening at certain state with certain year,
- if the STATE number is not exist, show error message, if the choosen state have no accident happended, show errors
- @examples
- \dontrun{
- fars_map_state(state.num = 1, year = 2014)
- }
- @importFrom  dplyr filter
- @importFrom maps map
- @importFrom graphics points
- @export
+This function will visualize the traffic accidents happend during certain year  within certain state into the geographic view
+}
+\examples{
+\dontrun{
+fars_map_state(state.num = 1, year = 2014)
+}
 }
