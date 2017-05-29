@@ -10,8 +10,8 @@
 #' @param filename str, the input file's name
 #' @return this function will return a tbl_df data , if the filename not exist in current directory, show error message
 #' @examples fars_read(filename="accident_2003.csv")
-#' @importFrom  readr::read_csv
-#' @importFrom  dplyr::tbl_df
+#' @importFrom  readr read_csv
+#' @importFrom  dplyr tbl_df
 fars_read <- function(filename) {
     if(!file.exists(filename))
         stop("file '", filename, "' does not exist")
@@ -47,8 +47,8 @@ make_filename <- function(year) {
 #' @return a list with data.frame elements, this function will return the tbl_df  with month and year column within certain years
 #' if the input years didnt contain in the dataset, show error message.
 #' @examples fars_read_years(years=2013)
-#' @importFrom dplyr::mutate
-#' @importFrom dplyr::select
+#' @importFrom dplyr mutate
+#' @importFrom dplyr select
 #' @export
 fars_read_years <- function(years) {
     lapply(years, function(year) {
@@ -73,10 +73,10 @@ fars_read_years <- function(years) {
 #' @param years a vectors contained integer indicated the years we want to query the accidennt happend
 #' @return a data.frame, according to the years with the information of the accidents
 #' @examples  fars_summarize_years(years = c(2013,2014))
-#' @import dplyr::bind_rows
-#' @importFrom  dplyr::group_by
-#' @importFrom dplyr::summarize
-#' @importFrom dplyr::spread
+#' @importFrom dplyr bind_rows
+#' @importFrom  dplyr group_by
+#' @importFrom dplyr summarize
+#' @importFrom dplyr spread
 #' @export
 fars_summarize_years <- function(years) {
     dat_list <- fars_read_years(years)
@@ -97,9 +97,9 @@ fars_summarize_years <- function(years) {
 #'  @return a graphical object, this function will return a plot with the accident happening at certain state with certain year,
 #'  if the STATE number is not exist, show error message, if the choosen state have no accident happended, show errors
 #'  @examples  fars_map_state(state.num = 1, year = 2014)
-#'  @importFrom  dplyr::filter
-#'  @importFrom maps::map
-#'  @importFrom graphics::points
+#'  @importFrom  dplyr filter
+#'  @importFrom maps map
+#'  @importFrom graphics points
 fars_map_state <- function(state.num, year) {
     filename <- make_filename(year)
     data <- fars_read(filename)
