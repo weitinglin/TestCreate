@@ -16,6 +16,8 @@ a data.frame, according to the years with the information of the accidents
 This function will first load the data accoding tot years input
 }
 \examples{
- fars_summarize_years(years = c(2013,2014))
+\dontrun{
+fars_summarize_years(years = c(2013,2014))
+}
 }
 

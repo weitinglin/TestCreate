@@ -16,6 +16,7 @@ this function will return the file name according to the input year
 This function will generate the file name according to the given years and will be used by another function
 }
 \examples{
-make_filename(year=2012)
+\dontrun{make_filename(year=2012)
+}
 }
 
