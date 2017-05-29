@@ -1,9 +1,12 @@
 Package: TestCreate
 Title: A R Package for lab data manipulation
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
+Authors@R: person("Weiting", "lin", email = "weitinglin66@gmail.com", role = c("aut", "cre"))
 Description: Provide the convenient way to wrangle the regulat lab data analysis
 Depends: R (>= 3.3.0)
 License: MIT
 Encoding: UTF-8
 LazyData: true
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
