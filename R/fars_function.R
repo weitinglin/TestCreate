@@ -53,7 +53,7 @@ make_filename <- function(year) {
 #'@return a list with data.frame elements, this function will return the tbl_df  with month and year column within certain years
 #'if the input years didnt contain in the dataset, show error message.
 #'@examples
-#'\dontun{
+#'\dontrun{
 #'fars_read_years(years=2013)
 #'}
 #'@importFrom dplyr %>% mutate select
