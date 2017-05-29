@@ -10,8 +10,4 @@ vignette: >
 ---
 
 # Package TestCreate
-You can use this package to analysis the data in our lab.
-
-
-## Function
-`create_phenodata` this function can help you to create data.frame for phenodata in cel file input
+A R Package for visualization of the US National Highway Traffic Safety Administrations dataset and practice for building R package
